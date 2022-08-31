@@ -32,18 +32,15 @@ class Customers:
     def add(fields):
         Customers.cust_id += 1
         Customers.db.append([Customers.cust_id, fields[0].get(), fields[1].get(), fields[2].get(), fields[3].get()])
-        print(Customers.db)
-        return 4
+        return 4  # Return the number of items edited
 
     """
         Returns all records in database
-
         @return List of all customers
     """
 
     @staticmethod
     def getAll():
-        print(Customers.db)
         return Customers.db
 
     """
@@ -73,12 +70,10 @@ class Customers:
             if sublist[0] == id_customer:
                 Customers.db[i] = [int(fields[0].get()), fields[1].get(),
                                    fields[2].get(), fields[3].get(), fields[4].get()]
-        print(Customers.db)
-        return 4
+        return 4  # Return the number of items edited
 
     """
         Delete a customer in database
-
         @param id_customer Id of the customer
     """
 
