@@ -85,7 +85,7 @@ class ShowView(tk.Tk, View):
             btn_edit.pack(side="left")
             
             # Make delete button
-            btn_exc = ttk.Button(frame_actions, text="Delete", command=lambda id=values[0]: self.showController.btnDel())
+            btn_exc = ttk.Button(frame_actions, text="Delete", command=lambda id=values[0]: self.showController.btnDel(id))
             btn_exc.pack(side="left")
             
             # Put customer data on screen

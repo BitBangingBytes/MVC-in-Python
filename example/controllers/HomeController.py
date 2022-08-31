@@ -28,7 +28,7 @@ class HomeController(Controller):
             c = Core.openController("add")
             c.main()
         elif caption == "Show customers with TreeView":
-            c = Core.openController("showTreeView")
+            c = Core.openController("showTree")
             c.main()
             
     """

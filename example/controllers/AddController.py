@@ -1,6 +1,7 @@
 from tkinter import messagebox
 from tkinter.constants import END
-from models.Customers import Customers
+# from models.Customers import Customers
+from models.CustomersLocal import Customers
 from core.Controller import Controller
 
 
