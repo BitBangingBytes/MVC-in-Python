@@ -1,7 +1,7 @@
 from tkinter import messagebox
 from tkinter.constants import END
-# from models.Customers import Customers
-from models.CustomersLocal import Customers
+# from models.Customers import Customers  # Uncomment this to use SQL database
+from models.CustomersLocal import Customers  # Comment this out to use SQL database
 from core.Controller import Controller
 
 

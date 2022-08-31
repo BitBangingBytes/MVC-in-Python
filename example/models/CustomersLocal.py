@@ -1,5 +1,3 @@
-# import mysql.connector
-
 """
     Responsible for 'Customers' local database access
 """
