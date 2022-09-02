@@ -70,10 +70,9 @@ class ShowView(tk.Tk, View):
             lbl = ttk.Label(data_frame, text=caption)
             lbl.grid(row=0, column=j, padx=self.PAD, pady=self.PAD)
             j += 1
-        
-        
+
         # Show data
-        for index,values in enumerate(customers):
+        for index, values in enumerate(customers):
             j = 1
             index += 1
             
