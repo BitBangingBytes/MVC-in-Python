@@ -1,8 +1,8 @@
 # MVC in Python
 
 ## Application execution
-This example differs from the original in that it uses a new CustomersLocal.py file for the model. 
-It uses a list of lists to keep track of uses instead of SQL, no nothing other than this sample code is needed
+This example differs from the original with a new CustomersLocal.py file for the model. 
+It uses a list of lists to keep track of users instead of SQL, so nothing other than this sample code is needed
 to execute the example.
 
 You can ignore the instructions below, they are left here so you can see how the original example worked.
