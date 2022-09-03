@@ -105,8 +105,8 @@ class ShowTreeView(tk.Tk, View):
         
         # Put columns info
         # Header
-        self.tv.heading("#0", text=self.THEADER[0], anchor=tk.W)
-        self.tv.column("#0", anchor=tk.W, width=100)
+        self.tv.heading("#0", text=self.THEADER[0], anchor="center")
+        self.tv.column("#0", anchor="center", width=100)
         for i in range(1, len(self.THEADER)):
             self.tv.heading(self.THEADER[i], text=self.THEADER[i])
             self.tv.column(self.THEADER[i], anchor="center", width=self.COLUMN_WIDTH)
@@ -116,13 +116,12 @@ class ShowTreeView(tk.Tk, View):
             self.tv.insert("", tk.END, text=customer[0], values=customer[1:])
         
         # Put tree view on frame
-        self.tv.grid(sticky=(tk.N, tk.S, tk.W, tk.E))
+        self.tv.grid(sticky="N S E W")
         self.tv.grid_rowconfigure(0, weight=1)
         self.tv.grid_columnconfigure(0, weight=1)
         
         # Add listener for enable the context menu
         self.tv.bind("<Button-3>", self._contextMenu_display)
-        
         
         btn = ttk.Button(self.frame_customers, text="Update data", command=self.update)
         btn.pack()
