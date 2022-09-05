@@ -4,6 +4,8 @@
 
 
 class Customers:
+    # This is a class variable to simulate the functionality of an external database.
+    # The original example used a SQL database which persists outside class creation.
     db = [[1, 'Fulano', 'da Silva', "98004", "321.00"],
           [2, 'Beltrano', 'da Silva', "98261", "123.23"],
           [3, 'Ciclano', 'da Silva', "12345", "21.00"],
